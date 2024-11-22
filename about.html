@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us </title>
+    <link rel="stylesheet" href="d4styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        window.onload = function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('loginButton').style.display = 'none';
+                document.getElementById('usernameDisplay').innerText = "Welcome " + username;
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="log.png" alt="CureWell Logo" style="height: 90px;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="health.html">Health Page</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                <li id="usernameDisplay" style="color: aliceblue; font-size: large;"></li>
+                <button id="loginButton"><a href="login.html">LogIn</a></button>
+            </ul>          
+        </div>
+    </nav>
+    
+
+    <section class="about-us">
+        <div class="container">
+            <h1>About Us</h1>
+            <div style ="display: flex;">
+                <p style="font-size: large; font-weight:600;">Welcome to CureWell Hospital, where we are committed to providing the highest quality healthcare services to our community. Our dedicated team of professionals is here to ensure your well-being and health.</p>
+                <img src="4.png" alt="CureWell Hospital">
+            </div>
+                        
+            <div class="team-section">
+                <h2>Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="1.jpeg" alt="Dr. Jane Smith">
+                        <h3>Dr. Jane Smith</h3>
+                        <p>Chief Medical Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="2.jpeg" alt="Dr. John Doe">
+                        <h3>Dr. John Doe</h3>
+                        <p>Lead Surgeon</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="3.jpeg" alt="Nurse Mary Johnson">
+                        <h3>Mary Johnson</h3>
+                        <p>Head Nurse</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-section">
+                <h2>Our Mission</h2>
+                <p style="font-size: large; font-weight:600;">Our mission is to provide exceptional healthcare services, emphasizing patient-centered care, innovation, and compassion.Practice evidence based medicine with highest integrity.</p>
+            </div>
+
+            <div class="values-section">
+                <h2>Our Values</h2>
+                <ul>
+                    <li>Compassion</li>
+                    <li>Excellence</li>
+                    <li>Integrity</li>
+                    <li>Innovation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                <a href=""><i class="fa-brands fa-youtube"></i></a>   
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="health.html">Health Page</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Designed By <span class="designer">Deloitte Team</span></p>
+        </div>
+        </footer>
+
+    
+</body>
+
+</html>

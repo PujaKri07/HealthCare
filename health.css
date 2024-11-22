@@ -1,0 +1,215 @@
+/* Global Styles */
+* {
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+
+.navbar{
+    background: rgb(41, 153, 153);
+    font-family: calibri;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+}
+.navdiv li a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.navdiv li a:hover {
+    background-color: rgb(2, 105, 97);
+    border-radius: 10px;
+  }
+button{
+    background-color: rgb(61, 221, 208);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    font-size: large;
+    font-weight:bold ;
+}
+button a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(41, 153, 153);
+}
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i {
+    font-size: 2em;
+    color: rgb(2, 105, 97);
+    opacity: 0.9;
+}
+.socialIcons a:hover {
+    background-color: rgb(2, 105, 97);
+    transition: 0.5s;
+}
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+.footerNav {
+    margin: 30px 0;
+}
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+.footerBottom {
+    background-color: rgb(2, 105, 97);
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p {
+    color: white;
+}
+
+/* Main Container */
+.main-container {
+    width: 95%;
+    margin: 0 auto;
+    color: #FFFF;
+}
+
+/* Header Section */
+.header-section {
+    height: 65px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+}
+.header-section h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.header-section p {
+    margin: 0;
+    padding: 0;
+}
+.website-details {
+    width: 220px;
+}
+.website-details h1 {
+    font-size: 13px;
+    font-style: italic;
+    font-family: cursive;
+    letter-spacing: 1px;
+}
+.nav-bar {
+    width: 600px;
+}
+.user-profile {
+    width: 160px;
+    display: flex;
+    padding: 20px;
+    font-size: 12px;
+}
+.user-profile span {
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Lists */
+ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+}
+ul li {
+    list-style-type: none;
+    padding: 10px 25px;
+    font-family: open sans;
+    font-size: 14px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Additional Styles */
+h2 {
+    color: brown;
+}
+p {
+    font-family: calibri;
+    font-size: large;
+    color: blue;
+    font-weight: bold;
+}
+.column {
+    float:left;
+    width: 20%;
+    height:20%;
+    padding: 2px;
+    border: gray 1px solid;
+    justify-content: center;
+    background-color: #c5e6eb;
+    margin: 2%;
+    align-items: center;
+}
+.row {
+    content: "";
+    clear: both;
+    background-color: rgba(165, 67, 67, 0);
+    height: inherit;
+    text-align: center;
+    align-content: center;
+    color: #c42d2d;
+    display: table;
+    margin: 2%;
+}
+
+
+.loginButton{
+    background-color: rgb(2, 105, 97) !important;
+}

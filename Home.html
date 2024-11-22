@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CureWell </title>
+    <link rel="stylesheet" href="style-home.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        window.onload = function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('loginButton').style.display = 'none';
+                document.getElementById('usernameDisplay').innerText = "Welcome " + username;
+            }
+        }
+    </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+        <div class="logo">
+            <a href="home.html">
+                <img src="log.png" alt="CureWell Logo" style="height: 90px;">
+            </a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="health.html">Health Page</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li id="usernameDisplay" style="color: aliceblue; font-size: large;"></li>
+            <button id="loginButton"><a href="login.html">LogIn</a></button>
+        </ul>          
+    </div>
+</nav>
+
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to CureWell</h1>
+          <p>
+            Your health is our priority. Experience the best care with our
+            top-notch facilities and expert medical team.
+          </p>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <h3>24/7 Emergency Care</h3>
+            <p>
+              We are available round the clock for emergency services to ensure
+              you get immediate attention whenever needed.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Specialist Consultations</h3>
+            <p>
+              Our team of specialists are experts in their fields, offering
+              consultations for various health conditions.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Advanced Diagnostics</h3>
+            <p>
+              We use the latest technology in medical diagnostics to provide
+              accurate and timely results.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Inpatient Services</h3>
+            <p>
+              Our inpatient services offer comfortable stays with the best
+              medical care and support from our dedicated staff.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistics">
+        <h2>Our Impact</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>Patients Treated</h3>
+            <p><strong>25,000+</strong></p>
+          </div>
+          <div class="stat-item">
+            <h3>Years of Experience</h3>
+            <p><strong>50+</strong></p>
+          </div>
+          <div class="stat-item">
+            <h3>Training Excellence</h3>
+            <p><strong>4.8/5</strong></p>
+          </div>
+          <div class="stat-item">
+            <h3>Overall Rating</h3>
+            <p><strong>4.9/5</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-best">
+        <h2>Why CureWell is the Best</h2>
+        <div class="why-best-content">
+          <div class="reason">
+            <h3>World-Class Facilities</h3>
+            <p>
+              Our hospital is equipped with the latest medical technology and
+              state-of-the-art facilities to ensure the best care for our
+              patients.
+            </p>
+          </div>
+          <div class="reason">
+            <h3>Expert Medical Team</h3>
+            <p>
+              Our doctors, nurses, and support staff are highly trained
+              professionals committed to providing compassionate and effective
+              care.
+            </p>
+          </div>
+          <div class="reason">
+            <h3>Patient-Centered Approach</h3>
+            <p>
+              We prioritize the needs and well-being of our patients, offering
+              personalized care plans and support throughout their treatment.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                <a href=""><i class="fa-brands fa-youtube"></i></a>   
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="health.html">Health Page</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Designed By <span class="designer">Deloitte Team</span></p>
+        </div>
+        </footer>
+  </body>
+</html>

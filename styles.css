@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #d4e9e2, #f4f4ff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.loginButton{
+    background-color: rgb(2, 105, 97) !important;
+}
+
+.map {
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #f8f9fa;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    color: #5c7a7c;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c7a7c;
+}
+.usernameDisplay{
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #5c7a7c;
+    border-radius: 8px;
+    background-color: #eef1f2;
+}
+
+.contact-form button {
+    background-color: #5c7a7c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 20%;
+}
+
+.contact-form button:hover {
+    background-color: #4e6a6b;
+}
+
+.events, .careers {
+    padding: 20px;
+}
+
+.events h1, .careers h1 {
+    color: #5c7a7c;
+    margin-bottom: 20px;
+}
+
+.event-item, .job-listing {
+    margin-bottom: 20px;
+}
+
+.event-item h2, .job-listing h2 {
+    color: #5c7a7c;
+    margin-top: 0;
+}

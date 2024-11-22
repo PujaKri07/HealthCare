@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #e0eafc, #f4f4f4);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4a6477;
+            margin-bottom: 40px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial {
+            background-color: #f0f7fd;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            color: #5a7081;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+            background-color: #e4eef7;
+        }
+
+        .testimonial p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .testimonial .author {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: right;
+            color: #3e5065;
+        }
+
+        .add-testimonial {
+            background-color: #f0f7fd;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            color: #5a7081;
+        }
+
+        .add-testimonial h3 {
+            color: #4a6477;
+        }
+
+        .add-testimonial label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #4a6477;
+        }
+
+        .add-testimonial input, .add-testimonial textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #5a7081;
+            border-radius: 8px;
+            background-color: #eaf2fa;
+        }
+
+        .add-testimonial button {
+            background-color: #5a7081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-testimonial button:hover {
+            background-color: #3e5065;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('loginButton').style.display = 'none';
+                document.getElementById('usernameDisplay').innerText = "Welcome " + username;
+                let usernameValue = document.getElementById('authorName');
+                usernameValue.value = username;
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="log.png" alt="CureWell Logo" style="height: 90px;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="health.html">Health Page</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                <li id="usernameDisplay" style="color: aliceblue; font-size: large;"></li>
+                <button id="loginButton"><a href="login.html">LogIn</a></button>
+            </ul>          
+        </div>
+    </nav>
+    
+    
+    <div class="container">
+        <h2>What Our Patients Say</h2>
+
+        <div class="testimonials-grid" id="testimonialList">
+            <div class="testimonial">
+                <p>"The doctors and staff are incredibly caring and professional. I always feel at ease here."</p>
+                <div class="author">- Sheldon</div>
+            </div>
+            <div class="testimonial">
+                <p>"Fantastic care! They treated me like family and ensured I was comfortable throughout my treatment."</p>
+                <div class="author">- Raj</div>
+            </div>
+            <div class="testimonial">
+                <p>"I'm alive and healthy, all thanks to the team."</p>
+                <div class="author">- Leonard</div>
+            </div>
+            <div class="testimonial">
+                <p>"Generic paragraph on why our healthcare system is good."</p>
+                <div class="author">- Howard</div>
+            </div>
+        </div>
+
+        <div class="add-testimonial">
+            <h3>Leave a Testimonial</h3>
+            <form id="testimonialForm">
+                <label for="testimonialText">Your Testimonial:</label>
+                <textarea id="testimonialText" name="testimonialText" rows="4" required></textarea>
+
+                <label for="authorName">Your Name:</label>
+                <input type="text" id="authorName" name="authorName" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                <a href=""><i class="fa-brands fa-youtube"></i></a>   
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="health.html">Health Page</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Designed By <span class="designer">Deloitte Team</span></p>
+        </div>
+        </footer>
+
+    <script>
+        document.getElementById('testimonialForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const testimonialText = document.getElementById('testimonialText').value;
+            const authorName = document.getElementById('authorName').value;
+
+            if (testimonialText && authorName) {
+                const testimonialList = document.getElementById('testimonialList');
+
+                const newTestimonial = document.createElement('div');
+                newTestimonial.classList.add('testimonial');
+                newTestimonial.innerHTML = `
+                    <p>"${testimonialText}"</p>
+                    <div class="author">- ${authorName}</div>
+                `;
+
+                testimonialList.appendChild(newTestimonial);
+
+                alert('Thank you for your testimonial!');
+
+                // Reset the form
+                e.target.reset();
+            }
+        });
+    </script>
+
+</body>
+</html>

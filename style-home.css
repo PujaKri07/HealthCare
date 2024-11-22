@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  
+  
+  .hero {
+    height: 80vh;
+    background: url("http://www.geethasreehospitals.com/admin/uploads/banner/cateloge2021_03_16_13_25_13.jpg")
+      no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .services,
+  .why-best,
+  .statistics {
+    padding: 40px 0;
+  }
+  
+  .services h2,
+  .why-best h2,
+  .statistics h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .service-card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  .statistics {
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .stat-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .why-best {
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .why-best-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .reason {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .reason h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .reason p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+
+  .navbar{
+    background: rgb(41, 153, 153);
+    font-family: calibri;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+}
+.navdiv li a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.navdiv li a:hover {
+    background-color: rgb(2, 105, 97);
+    border-radius: 10px;
+  }
+
+  footer{
+    background-color:rgb(41, 153, 153) ;
+    
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: rgb(2, 105, 97);
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: rgb(2, 105, 97);
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.navdiv li{
+  list-style: none;
+  display: inline-block;
+}
+.navdiv li a{
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.navdiv li a:hover {
+  background-color: rgb(2, 105, 97);
+  border-radius: 10px;
+}
+button{
+  background-color: rgb(2, 105, 97);
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90px;
+}
+button a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav{
+    list-style-type: none;
+}
+.footerNav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity:1;
+
+}
+.footerBottom {
+    background-color:rgb(2, 105, 97);
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color:white;
+
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+}
+
+ul li {
+    margin-right: 20px; 
+}
+
+ul button {
+    background-color: #5c7a7c; 
+    border: none; 
+    color: white;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+}
+
+ul button a {
+    text-decoration: none; 
+    color: white; 
+}
+
+/* Navbar Styles */
+.navbar {
+  background: rgb(41, 153, 153);
+  font-family: calibri;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.navdiv ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navdiv li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navdiv li a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.navdiv li a:hover {
+  background-color: rgb(2, 105, 97);
+  border-radius: 10px;
+}
+
+button {
+  background-color: rgb(2, 105, 97);
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90px;
+  border: none;
+}
+
+button a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
