@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             localStorage.setItem('username', fullName);
             localStorage.setItem('email', email);
-            window.location.href = 'home.html';
+            window.location.href = 'Home.html';
             alert('Sign-up successful! Welcome, ' + fullName + '!');
         });
     }
